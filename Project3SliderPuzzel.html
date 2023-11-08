@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Form Controls</title>
+		<style>
+            
+        </style>
+        <link rel="stylesheet" href="stylessheet.css"/>
+        <!-- <link rel="stylesheet" href="styl.css"> -->
+        <script src = "code.js" defer></script>
+
+        <body onload = "initialize();">
+            <h1>Hello User </h1>
+            <div class="wrapper">
+                    <div>Col 1</div>
+                    <div>Col 2</div>
+                    <div>Col 3</div>
+                    <div>Col 4</div>
+            </div>
+
+            
+
+            <table id = "Table"></table>
+            <button onclick = "play()">Start</button>
+            <button id="id">Moves Made</button>
+            <button onclick = "reset()">Reset</button>
+
+            <p id="reallycool"></p>
+              
+        </body>
+
+        <script>
+            const cool = document.getElementById("id");
+            cool.addEventListener("click", myFunction);
+            
+            function myFunction() {
+                return start ? document.getElementById("reallycool").innerHTML = "WHHAAAA why would you click this button" : document.getElementById("reallycool").innerHTML = "WHY would you click this again";;
+            }
+        </script>
+        
+	</head>
+</html>
