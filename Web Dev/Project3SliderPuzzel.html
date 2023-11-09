@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Slider Project 3</title>
+		<style>
+            
+        </style>
+        <link rel="stylesheet" href="stylessheet.css"/>
+        <script src = "code.js" defer></script>
+
+        <body onload = "initialize();">
+
+            <h1>Welcome to Shams's Slider Project</h1>
+            <div class="wrapper">
+                    <div>Col 1</div>
+                    <div>Col 2</div>
+                    <div>Col 3</div>
+                    <div>Col 4</div>
+            </div>
+
+
+            <table id = "Table"></table>
+
+            <button style ="margin-right:170px"; onclick = "play()">Start</button>
+            <button style ="margin-right:150px" id="id">Moves Made</button>
+            <button onclick = "reset()">Reset</button>
+            <p id="reallycool"></p>
+        </body>
+
+        <script>
+            const cool = document.getElementById("id");
+            cool.addEventListener("click", myFunction);
+            function myFunction() {
+                return start ? document.getElementById("reallycool").innerHTML = "WHHAAAA why would you click this button" : document.getElementById("reallycool").innerHTML = "WHY would you click this again";
+            }
+        </script>
+        
+	</head>
+</html>
