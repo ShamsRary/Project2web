@@ -1,6 +1,6 @@
 let puzzle = [];
 let answer = [];
-let moves = 1;
+let moves = 0;
 let start = false;
 
 
@@ -76,12 +76,14 @@ function makeTable(){
 
 function play(){
     start = true;
+    alert("You clicked start");
 }
 
 
 
 function reset(){
     start = false;
+    alrert("You clicked stop");
 }
 
 function isValidmove(move){
@@ -96,13 +98,13 @@ function isValidmove(move){
                     puzzle[move -1] = transfer;
 
 
-                    display();
                     if(start){
                         moves += 1;
                         if(win()){
                             alert("You won and got this many points " + score(moves));
                         }
                     }
+                    display();
                     
                     return true;
                 }

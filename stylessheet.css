@@ -1,11 +1,13 @@
   .wrapper {
-    width: 300px;
+    width: 1100px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .wrapper > div {
-    flex: 1 1 70px;
+    flex: 70px;
   }
+
 
 .Table {
     display: flex;
@@ -15,7 +17,20 @@
   }
     
 td{
+    background-color: #2196F3;
     border:thin solid black;
     padding: 8px;
 
+}
+
+button { 
+  width:250px; 
+  height:70px; 
+  justify-content: center;
+  background-color: #00d9ff;
+
+} 
+
+body{
+  background-color: #6B6B6B;
 }
