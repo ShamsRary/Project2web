@@ -83,7 +83,7 @@ function play(){
 
 function reset(){
     start = false;
-    alrert("You clicked stop");
+    alert("You clicked stop");
 }
 
 function isValidmove(move){
